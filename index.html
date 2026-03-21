@@ -193,7 +193,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 
 /* FAQ */
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px;}
-.faq-item{background:var(--w);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;transition:border-color .25s;}
+.faq-item{background:var(--w);border:1.5px solid var(--border);border-radius:var(--r);transition:border-color .25s;}
 .faq-item.open{border-color:var(--indigo);box-shadow:var(--shadow);}
 .faq-q{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;cursor:pointer;font-size:14px;font-weight:700;color:var(--ink);user-select:none;}
 .faq-q:hover{background:var(--bg);}
@@ -202,7 +202,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .faq-item.open .faq-chev{transform:rotate(180deg);color:var(--indigo);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);}
 .faq-item.open .faq-a{max-height:320px;}
-.faq-a-inner{padding:14px 24px 20px;font-size:13px;color:var(--muted);line-height:1.85;border-top:1px solid var(--border);}
+.faq-a-inner{padding:14px 24px 20px;font-size:13px;color:var(--muted);line-height:1.85;border-top:1px solid var(--border);border-radius:0 0 var(--r) var(--r);}
 
 /* CAREERS */
 .careers-banner{background:var(--bg2);border-radius:var(--r2);padding:64px;text-align:center;border:1.5px solid var(--border);margin-bottom:48px;position:relative;overflow:hidden;}
@@ -877,13 +877,39 @@ function showToast(msg) {
 
 // Contact form - opens WhatsApp with pre-filled message
 function submitForm() {
-  const fname = document.getElementById('CF_FNAME').value.trim();
-  const email = document.getElementById('CF_EMAIL').value.trim();
-  const msg = document.getElementById('CF_MSG').value.trim();
+  const fname   = document.getElementById('CF_FNAME').value.trim();
+  const email   = document.getElementById('CF_EMAIL').value.trim();
+  const msg     = document.getElementById('CF_MSG').value.trim();
   if (!fname || !email || !msg) {
     showToast('Please fill in your name, email and message.');
     return;
   }
-  const lname = document.getElementById('CF_LNAME').value.trim();
+  const lname   = document.getElementById('CF_LNAME').value.trim();
   const subject = document.getElementById('CF_SUBJECT').value || 'General Enquiry';
-  const waMsg = encodeURIComponent('Hello Reavyve,\n\nName: ' + fname + ' ' + lname + '\nEmail: ' + email + '\nSubject: ' + sub
+  const waMsg   = encodeURIComponent(
+    'Hello Reavyve,\n\nName: ' + fname + ' ' + lname +
+    '\nEmail: ' + email +
+    '\nSubject: ' + subject +
+    '\n\nMessage:\n' + msg
+  );
+  window.open('https://wa.me/2348138583245?text=' + waMsg, '_blank', 'noopener');
+  document.getElementById('FORM_SUCCESS').classList.add('show');
+  ['CF_FNAME','CF_LNAME','CF_EMAIL','CF_MSG'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  document.getElementById('CF_SUBJECT').selectedIndex = 0;
+}
+
+// Scroll fade-up animations
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      fadeObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+</script>
+</body>
+</html>
