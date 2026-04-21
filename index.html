@@ -32,7 +32,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 ::-webkit-scrollbar{width:5px;}
 ::-webkit-scrollbar-track{background:var(--bg);}
 ::-webkit-scrollbar-thumb{background:var(--indigo);border-radius:10px;}
-
 .container{max-width:1200px;margin:0 auto;padding:0 40px;width:100%;}
 .section{padding:100px 0;}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--indigo);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
@@ -45,7 +44,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .btn-primary:hover{background:var(--indigo2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(79,70,229,.35);}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--indigo);border:1.5px solid var(--indigo);padding:13px 26px;border-radius:12px;font-size:14px;font-weight:700;transition:all .25s var(--bounce);cursor:pointer;}
 .btn-outline:hover{background:var(--indigo-l);transform:translateY(-2px);}
-
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .4s;}
 .nav.scrolled{background:var(--w);border-bottom:1.5px solid var(--border);box-shadow:var(--shadow);}
@@ -70,7 +68,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .mob-links a{font-size:14px;font-weight:600;color:var(--ink2);padding:12px 14px;border-radius:10px;display:block;transition:all .2s;}
 .mob-links a:hover{color:var(--indigo);background:var(--indigo-l);}
 .mob-footer{padding:16px;border-top:1.5px solid var(--border);}
-
 /* HERO */
 #home{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:70px;}
 .hero-blob1{position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(79,70,229,.12) 0%,transparent 70%);border-radius:50%;pointer-events:none;}
@@ -116,14 +113,12 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .float-label{font-size:10px;color:var(--muted);font-weight:600;margin-bottom:3px;}
 .float-val{font-size:12px;font-weight:700;color:var(--ink);}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-
 /* MARQUEE */
 .marquee-bar{background:var(--indigo);padding:12px 0;overflow:hidden;white-space:nowrap;}
 .marquee-track{display:inline-flex;animation:marquee 22s linear infinite;}
 .marquee-track span{font-size:12px;font-weight:600;color:rgba(255,255,255,.9);padding:0 32px;letter-spacing:.5px;}
 .marquee-track span::before{content:'\2726';margin-right:12px;color:rgba(255,255,255,.4);}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
 /* TRUST */
 .trust-bar{border-top:1.5px solid var(--border);border-bottom:1.5px solid var(--border);background:var(--w);}
 .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);}
@@ -133,7 +128,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .trust-icon{font-size:26px;flex-shrink:0;}
 .trust-title{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:3px;}
 .trust-desc{font-size:12px;color:var(--muted);line-height:1.5;}
-
 /* CATEGORIES */
 .cats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px;}
 .cat-card{background:var(--w);border:1.5px solid var(--border);border-radius:var(--r2);padding:28px 24px;text-align:center;cursor:pointer;transition:all .35s var(--bounce);}
@@ -142,8 +136,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .cat-name{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px;}
 .cat-card:hover .cat-name{color:var(--indigo);}
 .cat-desc{font-size:12px;color:var(--muted);line-height:1.5;}
-
-/* HOW IT WORKS */
+/* HOW */
 .how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:64px;position:relative;}
 .how-grid::before{content:'';position:absolute;top:36px;left:12%;right:12%;height:2px;background:linear-gradient(90deg,var(--indigo),var(--coral));opacity:.2;}
 .how-step{text-align:center;position:relative;z-index:1;}
@@ -154,8 +147,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .how-step:nth-child(4) .how-num{background:linear-gradient(135deg,var(--coral),var(--indigo));}
 .how-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px;}
 .how-desc{font-size:13px;color:var(--muted);line-height:1.7;}
-
-/* ABOUT / FOUNDERS */
+/* ABOUT */
 .story-block{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:64px;}
 .story-pull{font-family:var(--ff-d);font-size:clamp(20px,2.5vw,28px);font-weight:700;color:var(--indigo);line-height:1.4;margin-bottom:28px;font-style:italic;border-left:4px solid var(--coral);padding-left:24px;}
 .story-body p{font-size:15px;color:var(--ink2);line-height:1.9;margin-bottom:18px;}
@@ -173,7 +165,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .tl-year{font-family:var(--ff-d);font-size:44px;font-weight:900;color:var(--indigo);line-height:1;margin-bottom:10px;}
 .tl-title{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:8px;}
 .tl-desc{font-size:13px;color:var(--muted);line-height:1.7;}
-
 /* QUALITY */
 .quality-bg{background:linear-gradient(135deg,var(--indigo) 0%,#7C3AED 60%,var(--coral) 100%);position:relative;overflow:hidden;}
 .quality-bg::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");}
@@ -190,7 +181,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .q-card-icon{font-size:28px;margin-bottom:10px;}
 .q-card-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:6px;}
 .q-card-desc{font-size:13px;color:rgba(255,255,255,.75);line-height:1.6;}
-
 /* FAQ */
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px;}
 .faq-item{background:var(--w);border:1.5px solid var(--border);border-radius:var(--r);transition:border-color .25s;}
@@ -202,8 +192,8 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .faq-item.open .faq-chev{transform:rotate(180deg);color:var(--indigo);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);}
 .faq-item.open .faq-a{max-height:320px;}
-.faq-a-inner{padding:14px 24px 20px;font-size:13px;color:var(--muted);line-height:1.85;border-top:1px solid var(--border);border-radius:0 0 var(--r) var(--r);}
-
+.faq-a-inner{padding:14px 24px 20px;font-size:13px;color:var(--muted);line-height:1.85;border-top:1px solid var(--border);}
+.faq-a-inner a{color:var(--indigo);font-weight:600;}
 /* CAREERS */
 .careers-banner{background:var(--bg2);border-radius:var(--r2);padding:64px;text-align:center;border:1.5px solid var(--border);margin-bottom:48px;position:relative;overflow:hidden;}
 .careers-banner::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at center,rgba(79,70,229,.06) 0%,transparent 60%);}
@@ -219,7 +209,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .no-roles-icon{font-size:48px;margin-bottom:16px;}
 .no-roles h3{font-family:var(--ff-d);font-size:24px;font-weight:700;color:var(--ink);margin-bottom:10px;}
 .no-roles p{font-size:14px;color:var(--muted);max-width:480px;margin:0 auto 28px;line-height:1.8;}
-
 /* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:56px;}
 .contact-info{display:flex;flex-direction:column;gap:16px;}
@@ -240,16 +229,15 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .form-field textarea{min-height:120px;resize:vertical;}
 .form-success{background:var(--green-l);border:1.5px solid rgba(16,185,129,.25);border-radius:10px;padding:14px;font-size:13px;font-weight:600;color:var(--green);text-align:center;display:none;margin-bottom:16px;}
 .form-success.show{display:block;}
-
 /* LEGAL */
 .legal-content{max-width:760px;}
 .legal-date{font-size:12px;color:var(--muted);margin-bottom:40px;padding:10px 14px;background:var(--bg2);border-radius:8px;display:inline-block;}
 .legal-content h2{font-family:var(--ff-d);font-size:26px;font-weight:700;color:var(--ink);margin:40px 0 12px;}
 .legal-content h2:first-of-type{margin-top:0;}
 .legal-content p{font-size:14px;color:var(--muted);line-height:1.9;margin-bottom:14px;}
+.legal-content p a,.legal-content li a{color:var(--indigo);font-weight:600;}
 .legal-content ul{padding-left:20px;margin-bottom:16px;}
 .legal-content li{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:6px;}
-
 /* FOOTER */
 .footer{background:var(--ink);color:rgba(255,255,255,.65);}
 .footer-main{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding:64px 0 48px;border-bottom:1px solid rgba(255,255,255,.08);}
@@ -261,23 +249,19 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
 .footer-col h5{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:16px;}
 .footer-col a{display:block;font-size:13px;color:rgba(255,255,255,.6);margin-bottom:10px;transition:color .2s;}
 .footer-col a:hover{color:#fff;}
-
 .footer-btm{display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-size:12px;flex-wrap:wrap;gap:12px;}
 .footer-btm-links{display:flex;gap:24px;}
 .footer-btm-links a{color:rgba(255,255,255,.35);transition:color .2s;}
 .footer-btm-links a:hover{color:rgba(255,255,255,.8);}
-
 /* TOAST */
 .toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:13px 28px;border-radius:100px;font-size:13px;font-weight:600;z-index:9999;transition:transform .4s var(--bounce);pointer-events:none;white-space:nowrap;box-shadow:0 8px 32px rgba(0,0,0,.3);}
 .toast.on{transform:translateX(-50%) translateY(0);}
-
 /* ANIMATIONS */
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
 .fade-up.visible{opacity:1;transform:none;}
 .fade-up:nth-child(2){transition-delay:.1s;}
 .fade-up:nth-child(3){transition-delay:.2s;}
 .fade-up:nth-child(4){transition-delay:.3s;}
-
 /* RESPONSIVE */
 @media(max-width:1024px){
   .container{padding:0 24px;}
@@ -312,20 +296,24 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
   .contact-form{padding:24px;}
   .no-roles{padding:40px 24px;}
 }
-
-/* ── NOTIFICATION MODAL ── */
+/* NOTIFICATION MODAL */
 .notif-overlay{position:fixed;inset:0;background:rgba(14,17,48,.55);backdrop-filter:blur(6px);z-index:5000;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .3s;}
 .notif-overlay.on{opacity:1;pointer-events:all;}
-.notif-box{background:var(--w);border-radius:24px;padding:40px 36px;max-width:420px;width:100%;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.2);transform:scale(.94) translateY(12px);transition:transform .4s var(--bounce);border:1.5px solid var(--border);}
+.notif-box{background:var(--w);border-radius:24px;padding:40px 36px;max-width:460px;width:100%;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.2);transform:scale(.94) translateY(12px);transition:transform .4s var(--bounce);border:1.5px solid var(--border);}
 .notif-overlay.on .notif-box{transform:scale(1) translateY(0);}
 .notif-icon{font-size:48px;margin-bottom:16px;line-height:1;}
 .notif-title{font-family:var(--ff-d);font-size:22px;font-weight:900;color:var(--ink);margin-bottom:10px;line-height:1.2;}
 .notif-body{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:28px;}
 .notif-actions{display:flex;flex-direction:column;gap:10px;}
-.notif-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--indigo);color:#fff;padding:13px 24px;border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;border:none;font-family:var(--ff-b);transition:all .25s var(--bounce);text-decoration:none;}
+.notif-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--indigo);color:#fff;padding:14px 24px;border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--ff-b);transition:all .25s var(--bounce);text-decoration:none;}
 .notif-btn-primary:hover{background:var(--indigo2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(79,70,229,.35);}
+.notif-btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:var(--indigo);border:1.5px solid var(--indigo);padding:13px 24px;border-radius:12px;font-size:14px;font-weight:700;cursor:pointer;font-family:var(--ff-b);transition:all .25s var(--bounce);text-decoration:none;}
+.notif-btn-secondary:hover{background:var(--indigo-l);transform:translateY(-2px);}
 .notif-btn-ghost{background:none;border:none;font-size:13px;color:var(--muted);cursor:pointer;padding:8px;font-family:var(--ff-b);transition:color .2s;}
 .notif-btn-ghost:hover{color:var(--ink);}
+.notif-divider{display:flex;align-items:center;gap:12px;margin:2px 0;}
+.notif-divider::before,.notif-divider::after{content:'';flex:1;height:1px;background:var(--border);}
+.notif-divider span{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;}
 </style>
 </head>
 <body>
@@ -349,7 +337,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
       <a href="#contact">Contact</a>
     </div>
     <div class="nav-right">
-      <button class="btn-primary" onclick="openNotif('NOTIF_SOON')" style="font-size:13px;padding:10px 20px;">Open Store &rarr;</button>
+      <button class="btn-primary" onclick="openNotif('NOTIF_SHOP')" style="font-size:13px;padding:10px 20px;">Shop Now &rarr;</button>
       <button class="nav-burger" onclick="openNav()"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -376,7 +364,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
     <a href="#terms" onclick="closeNav()">&#128196; Terms of Use</a>
   </div>
   <div class="mob-footer">
-    <button class="btn-primary" onclick="openNotif('NOTIF_SOON')" style="width:100%;justify-content:center;">Open Store &rarr;</button>
+    <button class="btn-primary" onclick="closeNav();openNotif('NOTIF_SHOP')" style="width:100%;justify-content:center;">Shop Now &rarr;</button>
   </div>
 </div>
 
@@ -392,7 +380,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
         <h1 class="hero-h1">Everything You Need,<br><em>One</em> <span class="hl">Place.</span></h1>
         <p class="hero-p">Tech, fashion, beauty, gadgets, books and more &mdash; all at verified student prices. Fast delivery right to your campus.</p>
         <div class="hero-ctas">
-          <button class="btn-primary" onclick="openNotif('NOTIF_APK')">Shop Now &rarr;</button>
+          <button class="btn-primary" onclick="openNotif('NOTIF_SHOP')">Shop Now &rarr;</button>
           <a class="btn-outline" href="#about">Our Story</a>
         </div>
         <div class="app-label">&#128242; Get the App</div>
@@ -405,7 +393,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             <div><div class="app-btn-sub">Download on the</div><div class="app-btn-name">App Store</div></div>
           </button>
-          <a class="app-btn app-btn-apk" href="https://github.com/Reavyve/reavyve/releases/download/v1.0.0/Reavyve.E-store.apk" id="APK_LINK">
+          <a class="app-btn app-btn-apk" href="https://github.com/Reavyve/reavyve/releases/download/v1.0.0/Reavyve.E-store.apk">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 16l-4-4h3V4h2v8h3l-4 4z"/><path d="M20 18H4v2h16v-2z"/></svg>
             <div><div class="app-btn-sub">Direct</div><div class="app-btn-name">Download APK</div></div>
           </a>
@@ -486,34 +474,15 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
       <p class="section-sub" style="margin:16px auto 0;text-align:center;">No complicated flows. No confusing checkouts. As simple as messaging a friend.</p>
     </div>
     <div class="how-grid">
-      <div class="how-step fade-up">
-        <div class="how-num">1</div>
-        <h3 class="how-title">Browse the Store</h3>
-        <p class="how-desc">Explore hundreds of products across all departments &mdash; all with clear prices in Naira, no surprises.</p>
-      </div>
-      <div class="how-step fade-up">
-        <div class="how-num">2</div>
-        <h3 class="how-title">Add to Cart</h3>
-        <p class="how-desc">Create your free account, add favourites to cart, and save items to your wishlist for later.</p>
-      </div>
-      <div class="how-step fade-up">
-        <div class="how-num">3</div>
-        <h3 class="how-title">Pay via Transfer</h3>
-        <p class="how-desc">Tap Checkout &mdash; bank details appear automatically. Transfer the total and upload your receipt.</p>
-      </div>
-      <div class="how-step fade-up">
-        <div class="how-num">4</div>
-        <h3 class="how-title">Get Delivered</h3>
-        <p class="how-desc">Your order comes through to us. We confirm, pack, and deliver to your campus within 24 hours.</p>
-      </div>
+      <div class="how-step fade-up"><div class="how-num">1</div><h3 class="how-title">Browse the Store</h3><p class="how-desc">Explore hundreds of products across all departments &mdash; all with clear prices in Naira, no surprises.</p></div>
+      <div class="how-step fade-up"><div class="how-num">2</div><h3 class="how-title">Add to Cart</h3><p class="how-desc">Create your free account, add favourites to cart, and save items to your wishlist for later.</p></div>
+      <div class="how-step fade-up"><div class="how-num">3</div><h3 class="how-title">Pay via Transfer</h3><p class="how-desc">Tap Checkout &mdash; bank details appear automatically. Transfer the total and upload your receipt.</p></div>
+      <div class="how-step fade-up"><div class="how-num">4</div><h3 class="how-title">Get Delivered</h3><p class="how-desc">Your order comes through to us. We confirm, pack, and deliver to your campus within 24 hours.</p></div>
     </div>
     <div style="margin-top:56px;background:var(--indigo-l);border:1.5px solid rgba(79,70,229,.18);border-radius:var(--r2);padding:32px 40px;display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
       <div style="font-size:36px;flex-shrink:0;">&#128161;</div>
-      <div style="flex:1;min-width:200px;">
-        <div style="font-size:15px;font-weight:700;color:var(--indigo);margin-bottom:6px;">Pro Tip</div>
-        <p style="font-size:14px;color:var(--ink2);line-height:1.7;">After you upload your receipt, we confirm your order and send delivery updates by email. Fast, direct, no hassle.</p>
-      </div>
-      <button class="btn-primary" onclick="openNotif('NOTIF_APK')">Try It Now &rarr;</button>
+      <div style="flex:1;min-width:200px;"><div style="font-size:15px;font-weight:700;color:var(--indigo);margin-bottom:6px;">Pro Tip</div><p style="font-size:14px;color:var(--ink2);line-height:1.7;">After you upload your receipt, we confirm your order and send delivery updates by email. Fast, direct, no hassle.</p></div>
+      <button class="btn-primary" onclick="openNotif('NOTIF_SHOP')">Try It Now &rarr;</button>
     </div>
   </div>
 </section>
@@ -550,21 +519,9 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
       </div>
     </div>
     <div class="timeline">
-      <div class="tl-item fade-up">
-        <div class="tl-year">2025</div>
-        <div class="tl-title">The Conversation</div>
-        <div class="tl-desc">Two Bells University students start talking. They identify a real, unsolved problem &mdash; students in Nigeria are underserved. The idea for Reavyve is born in a conversation that refuses to stay a daydream.</div>
-      </div>
-      <div class="tl-item fade-up">
-        <div class="tl-year">2026</div>
-        <div class="tl-title">Reavyve Is Built</div>
-        <div class="tl-desc">The talking stops and the building begins. The full Reavyve platform is designed and developed. Reavyve goes live, starting at Bells University of Technology &mdash; with plans to scale.</div>
-      </div>
-      <div class="tl-item fade-up">
-        <div class="tl-year">&rarr;</div>
-        <div class="tl-title">What Comes Next</div>
-        <div class="tl-desc">More campuses beyond Bells University. A native mobile app. More students across Nigeria discovering that they don&rsquo;t have to settle. Reavyve is just getting started.</div>
-      </div>
+      <div class="tl-item fade-up"><div class="tl-year">2025</div><div class="tl-title">The Conversation</div><div class="tl-desc">Two Bells University students start talking. They identify a real, unsolved problem &mdash; students in Nigeria are underserved. The idea for Reavyve is born in a conversation that refuses to stay a daydream.</div></div>
+      <div class="tl-item fade-up"><div class="tl-year">2026</div><div class="tl-title">Reavyve Is Built</div><div class="tl-desc">The talking stops and the building begins. The full Reavyve platform is designed and developed. Reavyve goes live, starting at Bells University of Technology &mdash; with plans to scale.</div></div>
+      <div class="tl-item fade-up"><div class="tl-year">&rarr;</div><div class="tl-title">What Comes Next</div><div class="tl-desc">More campuses beyond Bells University. A native mobile app. More students across Nigeria discovering that they don&rsquo;t have to settle. Reavyve is just getting started.</div></div>
     </div>
   </div>
 </section>
@@ -586,21 +543,9 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
         </div>
       </div>
       <div class="q-cards">
-        <div class="q-card">
-          <div class="q-card-icon">&#128269;</div>
-          <div class="q-card-title">Pre-Listing Inspection</div>
-          <div class="q-card-desc">Every product goes through a quality check before appearing on the store. If it doesn&rsquo;t meet our standard, it doesn&rsquo;t get listed. Simple.</div>
-        </div>
-        <div class="q-card">
-          <div class="q-card-icon">&#127991;&#65039;</div>
-          <div class="q-card-title">Authentic Products Only</div>
-          <div class="q-card-desc">We work exclusively with verified suppliers. No grey-market goods, no fakes. The brand name matches what&rsquo;s inside the box.</div>
-        </div>
-        <div class="q-card">
-          <div class="q-card-icon">&#128230;</div>
-          <div class="q-card-title">Safe Packaging</div>
-          <div class="q-card-desc">Orders are packed with care to arrive in perfect condition. Fragile items get extra protection. You ordered something great &mdash; it arrives that way.</div>
-        </div>
+        <div class="q-card"><div class="q-card-icon">&#128269;</div><div class="q-card-title">Pre-Listing Inspection</div><div class="q-card-desc">Every product goes through a quality check before appearing on the store. If it doesn&rsquo;t meet our standard, it doesn&rsquo;t get listed. Simple.</div></div>
+        <div class="q-card"><div class="q-card-icon">&#127991;&#65039;</div><div class="q-card-title">Authentic Products Only</div><div class="q-card-desc">We work exclusively with verified suppliers. No grey-market goods, no fakes. The brand name matches what&rsquo;s inside the box.</div></div>
+        <div class="q-card"><div class="q-card-icon">&#128230;</div><div class="q-card-title">Safe Packaging</div><div class="q-card-desc">Orders are packed with care to arrive in perfect condition. Fragile items get extra protection. You ordered something great &mdash; it arrives that way.</div></div>
       </div>
     </div>
   </div>
@@ -619,13 +564,13 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How long does delivery take?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">Most orders are delivered within 24 hours to campus addresses. For orders placed late at night, delivery happens the next morning. We always communicate your delivery time via email after confirming payment.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What payment methods do you accept?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">We currently accept direct bank transfers. Our account details are shown automatically at checkout. After transferring, upload your payment receipt through the store and we&rsquo;ll confirm your order.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Are your products genuine?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">Absolutely. Every product on Reavyve is sourced from verified suppliers and inspected before listing. We only sell brand-new, authentic items. If you receive something that doesn&rsquo;t match what was advertised, contact us immediately and we will resolve it.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you offer returns or refunds?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">We don&rsquo;t have a standard returns policy because every product is quality-verified before dispatch. However, if you receive something damaged, incorrect, or not as described, email us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a081f1b0c030c1f090e15081f093a1d171b131654191517">[email&#160;protected]</a> immediately and we will make it right at no cost to you.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you offer returns or refunds?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">We don&rsquo;t have a standard returns policy because every product is quality-verified before dispatch. However, if you receive something damaged, incorrect, or not as described, email us at <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a> immediately and we will make it right at no cost to you.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Do I need an account to shop?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">You can browse the full store without an account. To use the wishlist or proceed to checkout, you&rsquo;ll need a free account. Registration takes under a minute &mdash; just your name, email, and a password.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is a Flash Sale?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">Flash Sales are time-limited deals where selected products are offered at heavily discounted prices &mdash; sometimes up to 40% off. They appear with a live countdown timer at the top of the store. Once the timer ends, the sale ends. Check regularly so you don&rsquo;t miss them.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Which campuses do you deliver to?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">Reavyve is currently live at Bells University of Technology, Ota. We are actively working to expand to more campuses across Nigeria. If you&rsquo;re at a different school and want Reavyve there, send us an email &mdash; your campus could be next.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How do I track my order?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">After confirming your payment, we send order updates to your email &mdash; when packed, when dispatched, and when arrived. Make sure to check your inbox.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How do I contact support?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">Email us at <a href="/cdn-cgi/l/email-protection#9fedfafee9e6e9faecebf0edfaecdff8f2fef6f3b1fcf0f2"><span class="__cf_email__" data-cfemail="a2d0c7c3d4dbd4c7d1d6cdd0c7d1e2c5cfc3cbce8cc1cdcf">[email&#160;protected]</span></a>. We aim to respond within a few hours during business hours &mdash; 8am to 8pm WAT, Monday to Saturday.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Can I cancel an order after paying?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">You can request cancellation before your order is dispatched. Email us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="afddcaced9d6d9cadcdbc0ddcadcefc8c2cec6c381ccc0c2">[email&#160;protected]</a> as soon as possible with your Order ID. Once dispatched, cancellation may not be possible but we will do our best to help.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How do I contact support?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">Email us at <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a>. We aim to respond within a few hours during business hours &mdash; 8am to 8pm WAT, Monday to Saturday.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Can I cancel an order after paying?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">You can request cancellation before your order is dispatched. Email us at <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a> as soon as possible with your Order ID. Once dispatched, cancellation may not be possible but we will do our best to help.</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Is my information safe?</span><span class="faq-chev">&#9660;</span></div><div class="faq-a"><div class="faq-a-inner">Yes. We never store card details &mdash; payments are bank transfers only. Your receipt image is used solely for order verification. Personal data is stored securely in Google Firebase and handled per our Privacy Policy.</div></div></div>
     </div>
   </div>
@@ -673,11 +618,10 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
           <div class="contact-icon">&#128231;</div>
           <div>
             <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="/cdn-cgi/l/email-protection#80f2e5e1f6f9f6e5f3f4eff2e5f3c0e7ede1e9ecaee3efed"><span class="__cf_email__" data-cfemail="e3918682959a958690978c918690a3848e828a8fcd808c8e">[email&#160;protected]</span></a></div>
+            <div class="contact-value"><a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a></div>
             <div class="contact-note">We respond within 24 hours on business days.</div>
           </div>
         </div>
-
         <div class="contact-item">
           <div class="contact-icon">&#127979;</div>
           <div>
@@ -694,7 +638,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
             <div class="contact-note">Orders outside hours processed next morning.</div>
           </div>
         </div>
-        
       </div>
       <div class="contact-form">
         <h3>Send a Message</h3>
@@ -739,12 +682,12 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
       <p>Your account data is stored securely in Google Firebase, a cloud platform compliant with industry security standards. We implement reasonable technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure.</p>
       <h2>5. Your Rights</h2>
       <ul>
-        <li>You may request deletion of your account and data at any time by contacting us at <a href="/cdn-cgi/l/email-protection#c7b5a2a6b1beb1a2b4b3a8b5a2b487a0aaa6aeabe9a4a8aa"><span class="__cf_email__" data-cfemail="d3a1b6b2a5aaa5b6a0a7bca1b6a093b4beb2babffdb0bcbe">[email&#160;protected]</span></a></li>
+        <li>You may request deletion of your account and data at any time by contacting us at <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a></li>
         <li>You may request a copy of the personal data we hold about you</li>
         <li>You may correct inaccurate information in your account profile</li>
       </ul>
       <h2>6. Contact</h2>
-      <p>For any privacy-related questions, please contact us at <a href="/cdn-cgi/l/email-protection#ff8d9a9e8986899a8c8b908d9a8cbf98929e9693d19c9092"><span class="__cf_email__" data-cfemail="512334302728273422253e23342211363c30383d7f323e3c">[email&#160;protected]</span></a>.</p>
+      <p>For any privacy-related questions, please contact us at <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a>.</p>
     </div>
   </div>
 </section>
@@ -761,7 +704,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
       <h2>2. Orders &amp; Payments</h2>
       <p>All orders are subject to product availability and payment confirmation. An order is only confirmed once we have verified receipt of your bank transfer and sent you an email confirmation. Reavyve reserves the right to cancel any order if payment is not received within 24 hours of placement.</p>
       <h2>3. Quality Guarantee</h2>
-      <p>All products are guaranteed to be brand new, authentic, and as described. If you receive a product that does not meet these standards, notify us within 48 hours of receipt by email at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="790b1c180f000f1c0a0d160b1c0a391e14181015571a1614">[email&#160;protected]</a>. We will investigate and provide an appropriate resolution, which may include replacement or store credit.</p>
+      <p>All products are guaranteed to be brand new, authentic, and as described. If you receive a product that does not meet these standards, notify us within 48 hours of receipt by email at <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a>. We will investigate and provide an appropriate resolution, which may include replacement or store credit.</p>
       <h2>4. Prohibited Conduct</h2>
       <ul>
         <li>Submitting false payment receipts or fraudulent orders</li>
@@ -772,7 +715,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
       <h2>5. Limitation of Liability</h2>
       <p>Reavyve&rsquo;s liability for any order is limited to the value of that order. We are not liable for any indirect, incidental, or consequential damages arising from use of the platform or receipt of products.</p>
       <h2>6. Contact</h2>
-      <p>For questions about these terms, contact us at <a href="/cdn-cgi/l/email-protection#f5879094838c839086819a879086b59298949c99db969a98"><span class="__cf_email__" data-cfemail="b9cbdcd8cfc0cfdccacdd6cbdccaf9ded4d8d0d597dad6d4">[email&#160;protected]</span></a>.</p>
+      <p>For questions about these terms, contact us at <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a>.</p>
     </div>
   </div>
 </section>
@@ -787,7 +730,6 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
           <span class="footer-logo-text">Reavy<span>ve</span></span>
         </div>
         <p class="footer-tagline">The premium student campus store. Quality products at student prices, delivered to your campus. Built in Nigeria &#127475;&#127468;</p>
-        
       </div>
       <div class="footer-col">
         <h5>Company</h5>
@@ -800,8 +742,7 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
         <h5>Support</h5>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact Us</a>
-        <a href="/cdn-cgi/l/email-protection#2c5e494d5a555a495f58435e495f6c4b414d4540024f4341">Send Email</a>
-        <a href="/cdn-cgi/l/email-protection#dfadbabea9a6a9baacabb0adbaac9fb8b2beb6b3f1bcb0b2"><span class="__cf_email__" data-cfemail="47352226313e312234332835223407202a262e2b6924282a">[email&#160;protected]</span></a>
+        <a href="mailto:reavyvestores@gmail.com">reavyvestores@gmail.com</a>
       </div>
       <div class="footer-col">
         <h5>Legal</h5>
@@ -820,131 +761,75 @@ button{font-family:var(--ff-b);cursor:pointer;border:none;background:none;}
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Dynamic copyright year
+<script>
 document.getElementById('YEAR').textContent = new Date().getFullYear();
 
-// Nav scroll effect
 window.addEventListener('scroll', () => {
   document.getElementById('NAV').classList.toggle('scrolled', window.scrollY > 20);
   highlightNav();
-}, {passive: true});
+}, {passive:true});
 
-// Highlight active nav link based on scroll position
-function highlightNav() {
+function highlightNav(){
   const sections = ['home','how','about','quality','faq','careers','contact','privacy','terms'];
   const y = window.scrollY + 90;
   let current = 'home';
-  sections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el && el.offsetTop <= y) current = id;
-  });
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-  });
+  sections.forEach(id => { const el = document.getElementById(id); if(el && el.offsetTop <= y) current = id; });
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
 }
 highlightNav();
 
-// Mobile nav
-function openNav() {
-  document.getElementById('MOB_NAV').classList.add('open');
-  document.getElementById('MOB_OV').classList.add('on');
-  document.body.style.overflow = 'hidden';
-}
-function closeNav() {
-  document.getElementById('MOB_NAV').classList.remove('open');
-  document.getElementById('MOB_OV').classList.remove('on');
-  document.body.style.overflow = '';
-}
+function openNav(){ document.getElementById('MOB_NAV').classList.add('open'); document.getElementById('MOB_OV').classList.add('on'); document.body.style.overflow='hidden'; }
+function closeNav(){ document.getElementById('MOB_NAV').classList.remove('open'); document.getElementById('MOB_OV').classList.remove('on'); document.body.style.overflow=''; }
 
-// FAQ accordion
-function toggleFaq(btn) {
+function toggleFaq(btn){
   const item = btn.closest('.faq-item');
   const isOpen = item.classList.contains('open');
   document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
+  if(!isOpen) item.classList.add('open');
 }
 
-// Toast notification
 let toastTimer;
-function showToast(msg) {
-  const el = document.getElementById('TOAST');
-  el.innerHTML = msg;
-  el.classList.add('on');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => el.classList.remove('on'), 3000);
-}
+function showToast(msg){ const el=document.getElementById('TOAST'); el.innerHTML=msg; el.classList.add('on'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.classList.remove('on'),3000); }
 
-// ── NOTIFICATION MODALS ──────────────────────────────────
-function openNotif(id){
-  document.getElementById(id).classList.add('on');
-  document.body.style.overflow = 'hidden';
-}
-function closeNotif(id){
-  document.getElementById(id).classList.remove('on');
-  document.body.style.overflow = '';
-}
+function openNotif(id){ document.getElementById(id).classList.add('on'); document.body.style.overflow='hidden'; }
+function closeNotif(id){ document.getElementById(id).classList.remove('on'); document.body.style.overflow=''; }
 
-// Contact form
-function submitForm() {
-  const fname   = document.getElementById('CF_FNAME').value.trim();
-  const email   = document.getElementById('CF_EMAIL').value.trim();
-  const msg     = document.getElementById('CF_MSG').value.trim();
-  if (!fname || !email || !msg) {
-    showToast('Please fill in your name, email and message.');
-    return;
-  }
+function submitForm(){
+  const fname = document.getElementById('CF_FNAME').value.trim();
+  const email = document.getElementById('CF_EMAIL').value.trim();
+  const msg   = document.getElementById('CF_MSG').value.trim();
+  if(!fname||!email||!msg){ showToast('Please fill in your name, email and message.'); return; }
   const lname   = document.getElementById('CF_LNAME').value.trim();
   const subject = document.getElementById('CF_SUBJECT').value || 'General Enquiry';
-  window.location.href = 'mailto:reavyvestores@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('Hello Reavyve,\n\nName: ' + fname + ' ' + lname + '\nEmail: ' + email + '\n\nMessage:\n' + msg);
+  window.location.href = 'mailto:reavyvestores@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('Hello Reavyve,\n\nName: '+fname+' '+lname+'\nEmail: '+email+'\n\nMessage:\n'+msg);
   document.getElementById('FORM_SUCCESS').classList.add('show');
-  ['CF_FNAME','CF_LNAME','CF_EMAIL','CF_MSG'].forEach(id => {
-    document.getElementById(id).value = '';
-  });
-  document.getElementById('CF_SUBJECT').selectedIndex = 0;
+  ['CF_FNAME','CF_LNAME','CF_EMAIL','CF_MSG'].forEach(id=>{ document.getElementById(id).value=''; });
+  document.getElementById('CF_SUBJECT').selectedIndex=0;
 }
 
-// Scroll fade-up animations
 const fadeObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      fadeObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.1 });
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); fadeObserver.unobserve(e.target); } });
+}, {threshold:0.1});
 document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
 </script>
 
-<!-- ── NOTIFICATION MODALS ── -->
-<!-- Coming Soon modal — Open Store -->
-<div class="notif-overlay" id="NOTIF_SOON" onclick="if(event.target===this)closeNotif('NOTIF_SOON')">
+<!-- ══ SHOP NOW MODAL ══ -->
+<div class="notif-overlay" id="NOTIF_SHOP" onclick="if(event.target===this)closeNotif('NOTIF_SHOP')">
   <div class="notif-box">
-    <div class="notif-icon">🚀</div>
-    <div class="notif-title">Coming Soon</div>
-    <div class="notif-body">We&rsquo;re working hard to bring the Reavyve E-Store directly to your browser. Students will soon be able to browse, wishlist, and shop from our web store &mdash; quality products at student prices, without downloading anything. Stay tuned.</div>
+    <div class="notif-icon">🛍️</div>
+    <div class="notif-title">How do you want to shop?</div>
+    <div class="notif-body">Shop on the web store right now, or download the Android app to shop directly from your phone.</div>
     <div class="notif-actions">
-      <a class="notif-btn-primary" href="https://github.com/Reavyve/reavyve/releases/download/v1.0.0/Reavyve.E-store.apk">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 16l-4-4h3V4h2v8h3l-4 4z"/><path d="M20 18H4v2h16v-2z"/></svg>
-        Download APK to Shop Now
+      <a class="notif-btn-primary" href="https://codemantys.github.io/Reavyve-E-Store/" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Open Web Store
       </a>
-      <button class="notif-btn-ghost" onclick="closeNotif('NOTIF_SOON')">Maybe Later</button>
-    </div>
-  </div>
-</div>
-
-<!-- APK modal — Shop Now -->
-<div class="notif-overlay" id="NOTIF_APK" onclick="if(event.target===this)closeNotif('NOTIF_APK')">
-  <div class="notif-box">
-    <div class="notif-icon">📲</div>
-    <div class="notif-title">Not on App Stores Yet</div>
-    <div class="notif-body">The Reavyve E-Store is not yet available on the Google Play Store or Apple App Store &mdash; but you don&rsquo;t have to wait. Download our APK directly to your Android device and start shopping right now. iOS support is on its way.</div>
-    <div class="notif-actions">
-      <a class="notif-btn-primary" href="https://github.com/Reavyve/reavyve/releases/download/v1.0.0/Reavyve.E-store.apk">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 16l-4-4h3V4h2v8h3l-4 4z"/><path d="M20 18H4v2h16v-2z"/></svg>
-        Download APK &mdash; It&rsquo;s Free
+      <div class="notif-divider"><span>or get the app</span></div>
+      <a class="notif-btn-secondary" href="https://github.com/Reavyve/reavyve/releases/download/v1.0.0/Reavyve.E-store.apk">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 16l-4-4h3V4h2v8h3l-4 4z"/><path d="M20 18H4v2h16v-2z"/></svg>
+        Download Android APK
       </a>
-      <button class="notif-btn-ghost" onclick="closeNotif('NOTIF_APK')">Maybe Later</button>
+      <button class="notif-btn-ghost" onclick="closeNotif('NOTIF_SHOP')">Maybe Later</button>
     </div>
   </div>
 </div>
